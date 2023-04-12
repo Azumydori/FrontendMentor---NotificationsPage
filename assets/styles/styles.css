@@ -1,0 +1,148 @@
+:root {
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray-blue: hsl(210, 60%, 98%);
+  --light-gray-blue-1: hsl(211, 68%, 94%);
+  --light-gray-blue-2: hsl(205, 33%, 90%);
+  --gray-blue: hsl(219, 14%, 63%);
+  --dark-gray-blue: hsl(219, 12%, 42%);
+  --dark-blue: hsl(224, 21%, 14%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+body {
+  background-color: var(--light-gray-blue);
+  font-family: "Plus-Jakarta Sans", sans-serif;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  background-color: var(--white);
+  margin: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  width: 42rem;
+}
+
+.notifications_cont {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+.notifications_cont .number {
+  color: var(--white);
+  background-color: hsl(219deg, 85%, 26%);
+  font-weight: 800;
+  padding: 0.2rem 0.8rem;
+  border-radius: 0.25rem;
+}
+.notifications_cont button {
+  margin-left: auto;
+  color: var(--dark-gray-blue);
+  border: none;
+  background-color: transparent;
+  font-size: 15px;
+  cursor: pointer;
+}
+.notifications_cont button:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+
+.notif {
+  display: flex;
+  align-items: center;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.notif p {
+  padding-left: 1rem;
+  color: var(--dark-gray-blue);
+}
+.notif p strong {
+  color: var(--dark-blue);
+}
+.notif a {
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+}
+.notif a:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+.notif .club {
+  color: hsl(219deg, 85%, 26%);
+}
+.notif .time {
+  padding-top: 0.5rem;
+  display: block;
+}
+
+i {
+  color: hsl(1deg, 90%, 64%);
+  margin-left: 0.3rem;
+}
+
+#bg {
+  padding: 0.5rem;
+  border-radius: 15px;
+}
+
+figure img {
+  width: 4rem;
+}
+
+.dms {
+  padding: 1rem;
+  max-width: 32rem;
+  border: 1px solid var(--light-gray-blue-2);
+  background-color: var(--light-gray-blue);
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  color: var(--dark-gray-blue);
+}
+.dms:hover {
+  background-color: var(--light-gray-blue-1);
+}
+
+.notif p .read {
+  color: var(--dark-gray-blue);
+}
+.notif p .read:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+
+.chess {
+  width: 60px;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    max-width: 100vh;
+  }
+  section {
+    max-width: 25rem;
+  }
+  section img {
+    max-width: 5rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

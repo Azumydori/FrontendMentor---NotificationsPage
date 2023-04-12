@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+
+    <title>Frontend Mentor | Notifications page</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="notifications_cont">
+          <h1>Notifications</h1>
+          <span id="unread-num" class="number">3</span>
+
+          <button id="btn" onclick="MarklAllRead()">Mark all as read</button>
+        </div>
+        <div class="notif" id="bg">
+          <figure>
+            <img
+              src="./assets/images/avatar-mark-webber.webp"
+              alt="picture of a man"
+            />
+          </figure>
+          <p>
+            <a href="#">Mark Webber</a> reacted to your recent post
+            <strong class="read">My first tournament today! </strong
+            ><span class="dot" id="redDot"
+              ><i class="fa-solid fa-circle fa-2xs"></i
+            ></span>
+            <span class="time">1m ago</span>
+          </p>
+        </div>
+        <div class="notif" id="bg">
+          <figure>
+            <img
+              src="./assets/images/avatar-angela-gray.webp"
+              alt="picture of a woman"
+            />
+          </figure>
+          <p>
+            <a href="#">Angela Gray</a> followed you
+            <span class="dot" id="redDot"
+              ><i class="fa-solid fa-circle fa-2xs"></i
+            ></span>
+            <span class="time">5m ago</span>
+          </p>
+        </div>
+        <div class="notif" id="bg">
+          <figure>
+            <img
+              src="./assets/images/avatar-jacob-thompson.webp"
+              alt="picture of a man"
+            />
+          </figure>
+          <p>
+            <a href="#">Jacob Thompson</a> has joined your group
+            <strong class="club">Chess Club</strong>
+            <span class="dot" id="redDot"
+              ><i class="fa-solid fa-circle fa-2xs"></i
+            ></span>
+            <span class="time">1 day ago</span>
+          </p>
+        </div>
+        <div class="notif">
+          <figure>
+            <img
+              src="./assets/images/avatar-rizky-hasanuddin.webp"
+              alt="picture of a woman"
+            />
+          </figure>
+          <p>
+            <a href="#">Rizky Hasanuddin</a> sent you a private message
+            <span class="time">5 days ago</span>
+          </p>
+        </div>
+        <p class="dms">
+          Hello, thanks for setting up the Chess Club. I've been a member for a
+          few weeks now and I'm already having lots of fun and improving my
+          game.
+        </p>
+
+        <div class="notif">
+          <figure>
+            <img
+              src="./assets/images/avatar-kimberly-smith.webp"
+              alt="picture of a woman"
+            />
+          </figure>
+          <p>
+            <a href="#">Kimberly Smith</a> commented on your picture
+            <span class="time">1 week ago</span>
+          </p>
+          <figure class="chess">
+            <img src="./assets/images/image-chess.webp" alt="thumbnail" />
+          </figure>
+        </div>
+        <div class="notif">
+          <figure>
+            <img
+              src="./assets/images/avatar-nathan-peterson.webp"
+              alt="picture of a woman"
+            />
+          </figure>
+          <p>
+            <a href="#">Nathan Peterson</a> reacted to your recent post
+            <strong class="read"
+              >5 end-game strategies to increase your win rate</strong
+            >
+            <span class="time">2 weeks ago</span>
+          </p>
+        </div>
+        <div class="notif">
+          <figure>
+            <img
+              src="./assets/images/avatar-anna-kim.webp"
+              alt="picture of a woman"
+            />
+          </figure>
+          <p>
+            <a href="#">Anna Kim</a> left the group
+            <strong class="club">Chess Club</strong>
+            <span class="time">2 weeks ago</span>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Victoria Laplana</a>.
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
